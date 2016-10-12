@@ -1,0 +1,9 @@
+        if ((tcpmsg->bytes) > 
+            (peer->rcvmsg->msgbytes - (peer->readbytes + LDP_FIRST_READ_LEN))) {
+            LDP_NSR_ERR("tcp rd msg len > available mem: tcpmsg->bytes: %u "\
+                        "msg->msgbytes: %u peer->readbytes: %u", tcpmsg->bytes,
+                        peer->rcvmsg->msgbytes, 
+                        peer->readbytes + LDP_FIRST_READ_LEN);
+            peer->readstate = RD_STATE_START;
+            return(LDP_NSR_ERROR);
+        }

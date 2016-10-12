@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/project/swbuild32/ebapras/se.jan.12/pkt/sw/se/xc/bsd/routing/mpls/ldp/cli'
+let g:netrw_dirhist_2='/project/swbuild32/ebapras/se.jan.12/pkt/sw/se/xc/bsd/routing/mpls/ldp'
+let g:netrw_dirhist_3='/project/swbuild32/ebapras/se.jan.12/pkt/sw/se/xc/bsd/routing/mpls/ldp/src'
+let g:netrw_dirhist_4='/project/swbuild32/ebapras/se.jan.12/pkt/sw/se/xc/bsd/routing/mpls/ldp'
+let g:netrw_dirhist_5='/project/swbuild32/ebapras/se.jan.12/pkt/sw/se/xc/bsd/routing/mpls/ldp/include'
+let g:netrw_dirhist_6='/project/swbuild32/ebapras/se.jan.12/pkt/sw/se/xc/bsd/routing/mpls/ldp'
+let g:netrw_dirhist_7='/project/swbuild32/ebapras/se.jan.12/pkt/sw/se/xc/bsd/routing/mpls/ldp/src'
