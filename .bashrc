@@ -19,6 +19,7 @@ export SHELL="/bin/bash"
 export EDITOR=vi
 
 
+umask 0002
 #bash bindings
 
 bind -m vi-insert  '",o":"\"\\<"'
@@ -31,7 +32,6 @@ bind -m vi-insert  '",5":"%"'
 bind -m vi-insert  '",6":"^"'
 
 bind -m vi-insert '",i:"`"'
-bind -m vi-insert  '",a":"&"'
 bind -m vi-insert  '",b":"()"'
 bind -m vi-insert  '",c":"\C-_"'
 bind -m vi-insert  '",d":","'
@@ -51,6 +51,7 @@ bind -m vi-insert  '",w":"pwd"'
 bind -m vi-insert  '",t":""'
 bind -m vi-insert  '",u":""'
 bind -m vi-insert  '",p":"prashant@"'
+bind -m vi-insert  '",a":"admin@"'
 bind -m vi-insert  '",v":"10.192.75.1"'
 bind -m vi-insert  '",fa":"10.192.75.2"'
 bind -m vi-insert  '",fb":"10.192.75.3"'
@@ -214,12 +215,15 @@ export PS1='\h$(__git_ps1 " (\[$txtgrn\]$SCMVIEW/\[$txtcyn\]%s\[$txtrst\]/\W)")#
 function code_alias {
     alias cli="cd $PROJDIR/$SCMVIEW/vendor/metacli"
     alias mc="cd $PROJDIR/$SCMVIEW/vendor/metaswitch"
-    alias yang="cd $PROJDIR/$SCMVIEW/vendor/metacli/yangs"
-    alias ospf="/home/prashant/versa/viewr1/vendor/metaswitch/code/ospf"
-    alias bgp="/home/prashant/versa/viewr1/vendor/metaswitch/code/bgp"
-    alias rip="/home/prashant/versa/viewr1/vendor/metaswitch/code/rip"
-    alias isis="/home/prashant/versa/viewr1/vendor/metaswitch/code/isis"
-    alias rtm="/home/prashant/versa/viewr1/vendor/metaswitch/code/rtm"
+    alias ng="cd $PROJDIR/$SCMVIEW/vendor/metacli/yangs"
+    alias ospf="cd $PROJDIR/$SCMVIEW/vendor/metaswitch/code/ospf"
+    alias bgp="cd $PROJDIR/$SCMVIEW/vendor/metaswitch/code/bgp"
+    alias rip="cd $PROJDIR/$SCMVIEW/vendor/metaswitch/code/rip"
+    alias isis="cd $PROJDIR/$SCMVIEWvendor/metaswitch/code/isis"
+    alias rtm="cd $PROJDIR/$SCMVIEW/vendor/metaswitch/code/rtm"
+    alias stb="cd $PROJDIR/$SCMVIEW/build/vendor/metacli/nbase-stub/"
+    alias vdr="cd $PROJDIR/$SCMVIEW/vendor/"
+    alias pkg="cd $PROJDIR/$SCMVIEW/package"
     alias bld="cd $PROJDIR/$SCMVIEW"
 }
 
